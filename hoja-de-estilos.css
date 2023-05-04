@@ -1,0 +1,39 @@
+.titulos {
+    font-family: 'Courier New', Courier, monospace;
+    color: #661dae;
+}
+
+.descripciones {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #07000e;
+}
+
+.etiquetas {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #443653;
+    color: rgb(232, 230, 237);
+    width: 200px;
+}
+
+.container {
+    padding: 30px 30px;
+}
+
+.cuadrado {
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #443653;
+    width: 10vw;
+    padding: 5px;
+    margin: 10px;
+}
+
+.cuadrado h2 { 
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(232, 230, 237);
+}
+
+.cuadrado p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(232, 230, 237);
+}
