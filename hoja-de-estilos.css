@@ -1,8 +1,16 @@
 /* Estilos genéricos web */
+html {
+    min-width: 100vw;
+}
+
 * {
     background-color: #1C192E;
     font-family: 'Lato', sans-serif;
     color: #E7E7E7;
+}
+
+body {
+    background-color: #1C192E;
 }
 
 main {
@@ -41,8 +49,15 @@ h2 {
     font-size: 18pt;
 }
 
+h3 {
+    font-size: 16pt;
+}
 p {
     font-size: 12pt;
+}
+
+hr {
+    color: #E7E7E7;
 }
 
 
@@ -114,10 +129,9 @@ p {
 }
 
 .contentConocimientos__container-card {
-    border: 1px solid gray;
+    border: 4px solid gray;
     border-radius: 15px;
     text-align: center;
-
 }
 
 .contentConocimientos__container-card-2items {
@@ -257,6 +271,11 @@ form {
     font-size: 14pt;
 }
 
+.contentHablamos__form textarea {
+    width: 500px;
+    height: 200px;
+}
+
 .contentHablamos__form-input::placeholder {
     color: #E7E7E7;
 }
@@ -272,13 +291,76 @@ form {
     color: #706677;
 }
 
+.contentHablamos__form-dropdown select {
+    background-color: #706677;
+    color: #E7E7E7;
+}
+
+.contentHablamos__form-dropdown select:hover {
+    background-color: #E7E7E7;
+    color: #706677;
+}
+
+.contentHablamos__form-dropdown select:focus {
+    background-color: white;
+    box-shadow:0 0 4px #585191;
+    color: #706677;
+}
+
+.contentHablamos__form-dropdown label {
+    display: none;
+}
 .contentHablamos__form-btn:hover {
     opacity: 75%;
 }
 
 /* Responsive */
-/* @media only screen and (max-width: 768px) {
-    .container-trabajos {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    .header__container-navbar {
+        display: none;
     }
-  } */
+
+    .contentIndex {
+        grid-template-columns: 1fr
+    }
+
+    .contentConocimientos__info p {
+        display: none;
+    }
+
+    .contentConocimientos__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentTrabajos__container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 4rem;
+    }
+
+    .contentTrabajos__container-work img{
+    max-width: 300px;
+    max-height: 200px;
+    }
+
+    .contentWomenTech {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .contentWomenTech__container img {
+    display: none;
+    }
+
+    .contentHablamos {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .contentHablamos__form textarea {
+        width: 300px;
+        height: 200px;
+    }
+}
