@@ -8,49 +8,50 @@
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img src="../assets/logo pequeño webdeveloper.png" alt="" width="75">
+    <header class="header__container">
+        <img src="../assets/fullstackdeveloper-logo.png" alt="Laura Díez Full Stack Developer" width="75">
         <nav>
-            <ul>
+            <ul class="header__container-navbar">
                 <li><a href="../index.html">Sobre mi</a></li>
-                <li><a href="./conocimientos.html">Conocimientos</a></li>
-                <li><a href="./trabajos.html">Trabajos</a></li>
-                <li><a href="./women-in-tech.html">#WomenInTech</a></li>
-                <li><button><a href="./hablamos.html">¿Hablamos?</a></button></li>
+                <li><a href="../pages/conocimientos.html">Conocimientos</a></li>
+                <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                <li><a href="../pages/women-in-tech.html">#WomenInTech</a></li>
             </ul>
         </nav>
-        <hr>
+        <button class="header__container-btn"><a href="../pages/hablamos.html">¿Hablamos?</a></button>
     </header>
+    <hr>
     <main>
-        <section>
-            <h1 class="titulos">¿Hablamos sobre mi trabajo?</h1>
-            <h2 class="titulos">Rellena el formulario y me pondré en contacto contigo</h2>
-            <p class="descripciones">También podemos hablar por Linkedin si lo prefieres.</p>
-            <button><a href="https://www.linkedin.com/in/lauradiezmarketing/">Linkedin</a></button>
-        </section>
-        <hr>
-        <section>
-            <form action="enviar-email.php" method="post">
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Tu nombre" id="nombre">
-                <label for="email">Email</label>
-                <input type="email" placeholder="Tu email" id="email">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <button>Enviar</button>
-            </form>
+        <section class="contentHablamos">
+            <section class="contentHablamos__info">
+                <h1>¿Hablamos sobre mi trabajo?</h1>
+                <h2>Rellena el formulario y me pondré en contacto contigo</h2>
+                <p>También podemos hablar por Linkedin si lo prefieres.</p>
+                <button><a href="https://www.linkedin.com/in/lauradiezmarketing/">Linkedin</a></button>
+            </section>
+            <section class="contentHablamos__form">
+                <form action="" method="">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Tu nombre" id="nombre" class="contentHablamos__form-input">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Tu email" id="email" class="contentHablamos__form-input">
+                    <label for="message">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje" cols="50" rows="11" class="contentHablamos__form-input"></textarea>
+                    <button class="contentHablamos__form-btn">Enviar</button>
+                </form>
+            </section>
         </section>
     </main>
-    <footer>
-        <hr>
-        <ul>
+    <hr>
+    <footer class="footer__container">
+        <ul class="footer__container-navbar">
             <li><a href="../index.html">Sobre mi</a></li>
             <li><a href="./conocimientos.html">Conocimientos</a></li>
             <li><a href="./trabajos.html">Trabajos</a></li>
             <li><a href="./women-in-tech.html">#WomenInTech</a></li>
             <li><button><a href="https://www.linkedin.com/in/lauradiezmarketing/">Linkedin</a></button></li>
         </ul>
-        <p>© copyright 2023 - Laura Díez</p>
     </footer>
+    <p class="copyright">© copyright 2023 - Laura Díez</p>
 </body>
 </html>

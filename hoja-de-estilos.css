@@ -1,39 +1,284 @@
-.titulos {
-    font-family: 'Courier New', Courier, monospace;
-    color: #661dae;
+/* Estilos genéricos web */
+* {
+    background-color: #1C192E;
+    font-family: 'Lato', sans-serif;
+    color: #E7E7E7;
 }
 
-.descripciones {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #07000e;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.etiquetas {
+button {
+    background-color: #FCF75B;
+    border-radius: 20px;
+    padding: 1rem;
+    color: #706677;
+    cursor: pointer;
+}
+
+button a {
+    background-color: #FCF75B;
+    color: #706677;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: #FCF75B;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 22pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+p {
+    font-size: 12pt;
+}
+
+
+/* Estilos header */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.header__container-navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__container-btn {
+    padding: 1rem;
+    font-style: bold;
+}
+
+
+/* Estilos footer */ 
+.footer__container {
+    display: flex;
+    justify-content: end;
+}
+
+.footer__container-navbar {
+    margin-right: 3rem;
+    text-align: end;
+    gap: 2rem;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* Estilos página INDEX /SOBRE MI */
+.contentIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contentIndex_image {
+    border-radius: 30%;
+}
+
+
+/* Estilos página CONOCIMIENTOS */
+.contentConocimientos__info {
+    text-align: center;
+}
+
+.contentConocimientos__container {
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content:space-between;
+    gap: 1rem;
+}
+
+.contentConocimientos__container-card {
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.contentConocimientos__container-card-2items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contentConocimientos__container img {
+    max-width: 100px;
+    background-color: #E7E7E7;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.contentConocimientos__container-card-2items img {
+    max-width: 60px;
+    background-color: #E7E7E7;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/* Estilos página TRABAJOS */
+.contentTrabajos__info h1 {
+    text-align: center;
+}
+
+.contentTrabajos__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    margin-bottom: 3rem;
+}
+
+.contentTrabajos__container-banner {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.contentTrabajos__container-banner hr {
+    border: none;
+    color: #706677;
+    border-top: 2px solid #8f8f8f;
+    width: 100%;
+    margin: 0;
+}
+
+.contentTrabajos__container-banner button {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.contentTrabajos__container-work-label {
     font-family: 'Courier New', Courier, monospace;
     background-color: #443653;
     color: rgb(232, 230, 237);
     width: 200px;
 }
 
-.container {
-    padding: 30px 30px;
+
+/* Estilos página #WOMENINTECH */
+.contentWomenTech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 3rem;
 }
 
-.cuadrado {
-    border: 1px solid gray;
-    text-align: center;
-    background-color: #443653;
-    width: 10vw;
-    padding: 5px;
-    margin: 10px;
+.contentWomenTech__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.cuadrado h2 { 
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(232, 230, 237);
+.contentWomenTech__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.cuadrado p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(232, 230, 237);
+.contentWomenTech__container-title {
+    margin: 1rem;
 }
+
+.contentWomenTech__container-description {
+    margin-bottom: 1rem;
+}
+
+
+/* Estilos página HABLAMOS/CONTACTO */
+.contentHablamos {
+    display: flex;
+}
+
+.contentHablamos__info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 3rem;
+}
+
+.contentHablamos__info button {
+    display: flex;
+    align-items: center;
+}
+
+.contentHablamos__form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    width: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 3rem;
+}
+
+.contentHablamos__form-input {
+    border-radius: 15px;
+    background-color: #706677;
+    font-size: 14pt;
+}
+
+.contentHablamos__form-input::placeholder {
+    color: #E7E7E7;
+}
+
+.contentHablamos__form-input:hover {
+    background-color: #E7E7E7 ;
+    box-shadow:0 0 4px #585191;
+}
+
+.contentHablamos__form-input:focus {
+    background-color: white;
+    box-shadow:0 0 4px #585191;
+    color: #706677;
+}
+
+.contentHablamos__form-btn:hover {
+    opacity: 75%;
+}
+
+/* Responsive */
+/* @media only screen and (max-width: 768px) {
+    .container-trabajos {
+    grid-template-columns: 1fr;
+    }
+  } */

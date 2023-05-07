@@ -6,69 +6,77 @@
     <title>Conocimientos de Laura Díez - Full Stack Developer</title>
     <link rel="stylesheet" href="../hoja-de-estilos.css">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap'); </style>
 </head>
 <body>
-    <header>
-        <img src="../assets/logo pequeño webdeveloper.png" alt="" width="75">
+    <header class="header__container">
+        <img src="../assets/fullstackdeveloper-logo.png" alt="Laura Díez Full Stack Developer" width="75">
         <nav>
-            <ul>
+            <ul class="header__container-navbar">
                 <li><a href="../index.html">Sobre mi</a></li>
-                <li><a href="./conocimientos.html">Conocimientos</a></li>
-                <li><a href="./trabajos.html">Trabajos</a></li>
-                <li><a href="./women-in-tech.html">#WomenInTech</a></li>
-                <li><button><a href="./hablamos.html">¿Hablamos?</a></button></li>
+                <li><a href="../pages/conocimientos.html">Conocimientos</a></li>
+                <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                <li><a href="../pages/women-in-tech.html">#WomenInTech</a></li>
             </ul>
         </nav>
-        <hr>
+        <button class="eader__container-btn"><a href="../pages/hablamos.html">¿Hablamos?</a></button>
     </header>
+    <hr>
     <main>
-        <h1 class="titulos">H1</h1>
-        <h2 class="titulos">H2</h2>
-        <section class="container">
-            <section class="cuadrado">
-            <H2>HTML5</H2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
+        <section class="contentConocimientos__info">
+            <h1>De marketer a Full Stack Developer</h1>
+            <h2>cómo mi trasfondo en diseño y marketing impulsan mi carrera en el mundo de la programación.</h2>
+            <p>Soy una Full Stack Developer que se enorgullece de haber comenzado mi carrera en el mundo del marketing y el diseño UX/UI. Con mi formación en estas áreas, soy capaz de crear soluciones digitales que no solo funcionan bien, sino que también son atractivas y satisfacen las necesidades de los usuarios. Como desarrolladora, tengo la capacidad de crear y mantener aplicaciones web desde cero, y mi experiencia en el mundo del negocio me permite entender cómo la tecnología puede ayudar a mejorar la rentabilidad y la eficiencia de una empresa.</p>
+        </section>
+        <section class="contentConocimientos__container">
+            <section class="contentConocimientos__container-card">
+                <H2>HTML5</H2>
+                <img src="../assets/conocimientos/HTML5_logo.png" alt="HTML5">
             </section>
-            <section class="cuadrado">
+            <section class="contentConocimientos__container-card">
                 <H2>CSS</H2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
+                <section class="contentConocimientos__container-card-2items">
+                    <img src="../assets/conocimientos/CSS_logo.png" alt="CSS">
+                    <img src="../assets/conocimientos/SASS_logo.png" alt="SASS">
             </section>
-            <section class="cuadrado">
+            </section>
+            <section class="contentConocimientos__container-card">
                 <H2>JavaScript</H2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
+                <img src="../assets/conocimientos/JS_logo.png" alt="JavaScript">
             </section>
-            <section class="cuadrado">
+            <section class="contentConocimientos__container-card">
                 <H2>ReactJS</H2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
+                <img src="../assets/conocimientos/ReactJS_logo.png" alt="ReactJS">
             </section>
-            <section class="cuadrado">
+            <section class="contentConocimientos__container-card">
                 <H2>Python</H2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
+                <img src="../assets/conocimientos/PHYTON_logo.png" alt="Python">
             </section>
-            <section class="cuadrado">
+            <section class="contentConocimientos__container-card">
                 <H2>UX/UI Design</H2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
+                <section class="contentConocimientos__container-card-2items">
+                    <img src="../assets/conocimientos/UXUI_logo.png" alt="UX/UI Design">
+                    <img src="../assets/conocimientos/Figma_logo.png" alt="Figma">
+                </section>
             </section>
-            <section class="cuadrado">
+            <section class="contentConocimientos__container-card">
                 <H2>Marketing Digital</H2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
             </section>
-            <section class="cuadrado">
+            <section class="contentConocimientos__container-card">
                 <H2>Business Mindset</H2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime cum non nostrum perspiciatis est consequuntur temporibus quas, reiciendis, accusamus, tempore sunt eos tempora aliquam a nulla ipsum inventore doloremque.</p>
             </section>
-    </section>
+        </section>
     </main>
-    <footer>
-        <hr>
-        <ul>
+    <hr>
+    <footer class="footer__container">
+        <ul class="footer__container-navbar">
             <li><a href="../index.html">Sobre mi</a></li>
             <li><a href="./conocimientos.html">Conocimientos</a></li>
             <li><a href="./trabajos.html">Trabajos</a></li>
             <li><a href="./women-in-tech.html">#WomenInTech</a></li>
             <li><button><a href="https://www.linkedin.com/in/lauradiezmarketing/">Linkedin</a></button></li>
         </ul>
-        <p>© copyright 2023 - Laura Díez</p>
     </footer>
+        <p class="copyright">© copyright 2023 - Laura Díez</p>
 </body>
 </html>
