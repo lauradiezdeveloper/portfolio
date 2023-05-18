@@ -1,0 +1,38 @@
+.contentConocimientos__info {
+	text-align: center;
+}
+
+.contentConocimientos__container {
+	padding: 30px 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-content: space-between;
+	gap: 1rem;
+	img {
+		max-width: 100px;
+		background-color: $background-color_3;
+		padding: 20px;
+		border-radius: 50px;
+		margin-bottom: 20px;
+	}
+
+    &-card {
+        border: 4px solid gray;
+        border-radius: 15px;
+        text-align: center;
+
+        &-card-2items {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        img {
+            max-width: 60px;
+            background-color: $background-color_3;
+            padding: 20px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            }
+        }
+    }
+}

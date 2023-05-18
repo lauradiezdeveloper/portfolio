@@ -1,0 +1,19 @@
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem;
+
+    &-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &-btn {
+        padding: 1rem;
+        font-style: bold;
+    }
+    
+}

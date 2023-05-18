@@ -1,0 +1,15 @@
+.footer__container {
+	display: flex;
+	justify-content: end;
+
+    &-navbar {
+        margin-right: 3rem;
+        text-align: end;
+        gap: 2rem;
+
+    }
+}
+
+.copyright {
+	text-align: center;
+}

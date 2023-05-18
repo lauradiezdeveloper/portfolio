@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-diezromero",
+  "version": "1.0.0",
+  "description": "¡Hola! Soy Laura, una desarrolladora Full Stack **apasionada por crear soluciones innovadoras y escalables**. En este repositorio, encontrarás mi portafolio web que resume mis habilidades, experiencia y proyectos desarrollados.",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css/main.css -w  --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

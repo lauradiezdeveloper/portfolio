@@ -1,0 +1,12 @@
+.contentIndex {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	padding: 2rem;
+	margin-bottom: 3rem;
+
+    &_image {
+        border-radius: 30%;
+    }
+}

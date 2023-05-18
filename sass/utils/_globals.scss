@@ -1,0 +1,60 @@
+html {
+	min-width: 100vw;
+}
+
+* {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	color: $color_1;
+}
+
+body {
+	background-color: $background-color_1;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+button {
+	background-color: $background-color_2;
+	border-radius: 20px;
+	padding: 1rem;
+	color: $color_2;
+	cursor: pointer;
+	a {
+		background-color: $background-color_2;
+		color: $color_2;
+		font-weight: 900;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color_3;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	font-size: 22pt;
+}
+
+h2 {
+	font-size: 18pt;
+}
+
+h3 {
+	font-size: 16pt;
+}
+
+p {
+	font-size: 12pt;
+}
+
+hr {
+	color: $color_1;
+}
