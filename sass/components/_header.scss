@@ -4,11 +4,15 @@
 	align-items: center;
 	margin: 1rem;
 
+
     &-navbar {
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 2rem;
+        background-color: $color_neutro4;
+        color: $color_acento;
+        padding: 0;
     }
 
     &-btn {
@@ -16,4 +20,23 @@
         font-style: bold;
     }
     
+}
+
+.navbar-toggler {
+    background-color: $color_neutro4;
+    
+    &-icon {
+        background-color: $color_neutro4;
+    }
+}
+
+.custom-btn {
+    background-color: $color_acento;
+}
+
+.nav-link {
+    color: $color_neutro4;
+    &:hover {
+        color: $color_acento
+    }
 }

@@ -1,12 +1,156 @@
-.contentIndex {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-items: center;
-	align-items: center;
-	padding: 2rem;
-	margin-bottom: 3rem;
+.Index {
+	@include templateFlex (2, row, false);
+	justify-content: center;
+	gap: 10rem;
+}
 
-    &_image {
-        border-radius: 30%;
-    }
+.contentIndex {
+	margin-top: 30px;
+
+	&__text {
+		margin-bottom: 40px;
+
+	&-nombre {
+		font-size: 70pt;
+		font-family: 'Jura';
+		}
+	}
+
+	&__buttons {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 10px;
+
+	}
+	&-col1{
+		grid-column: 1 / 2;
+	}
+
+	&-col2 {
+		grid-column: 2 / 3;
+		
+	}
+	
+	&__buttons-btn1 {
+		background-color: $color_acento;
+		border-radius: 54px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		transition: transform 0.3s, scale 0.3s;
+		grid-column: 1 / -1;
+	
+	&:hover {
+		transform: scale(0.80);
+		cursor: pointer;
+		}
+	}
+
+	.animatedText1 {
+		font-size: 30pt;
+		background-color: $color_acento;
+		color: $color_neutro3;
+		font-family: 'Jura';
+	}
+
+
+	&__buttons-btn2 {
+		height:5rem;
+		background-color: $color_neutro3;
+		border-radius: 54px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		transition: transform 0.3s, scale 0.3s;
+		margin-bottom: 5px;
+
+		&:hover {
+			transform: scale(0.80);
+			cursor: pointer;
+		}
+	
+		.animatedText2 {
+			font-size: 15pt;
+			background-color: $color_neutro3;
+			color: $color_neutro2;
+			font-family: $font-family_acento;
+		}
+	}
+	
+
+	&__buttons-btn3 {
+		@extend .contentIndex__buttons-btn2;
+		background-color: $color_neutro4;
+
+		.animatedText3 {
+			font-size: 15pt;
+			background-color: $color_neutro4;
+			color: $color_neutro2;
+			font-family: $font-family_acento;
+		}
+	}
+	
+}
+
+.contentIndex__img {
+	border-radius: 30%;
+	max-height: 30rem;
+}
+
+
+@media (max-width: $bpSmall) {
+	.Index {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.75rem;
+	}
+	
+	.contentIndex {
+		text-align: center;
+	
+		&__text-nombre {
+			font-size: 40pt;
+		}
+
+		&__img {
+			max-height: 20rem;
+		}
+
+		&__buttons {
+			grid-template-columns: 1fr;
+			grid-gap: 20px;
+
+			&-btn1 {
+				grid-column: initial;
+				width: 100%;
+			}
+
+			&-btn2  {
+				height: 3rem;
+			}
+
+			&-btn3 {
+				height: 3rem;
+			}
+
+		}
+	}	
+
+	.animatedText1 {
+		font-size: 25pt;
+	}
+	
+	.animatedText2,
+	.animatedText3 {
+		font-size: 12pt;
+	}
+	
 }

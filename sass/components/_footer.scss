@@ -7,7 +7,12 @@
         text-align: end;
         gap: 2rem;
 
+        a:hover {
+        color: $color_acento
+        }
+
     }
+    
 }
 
 .copyright {

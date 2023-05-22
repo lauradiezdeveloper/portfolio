@@ -6,56 +6,42 @@
         flex-direction: column;
         align-items: baseline;
         padding: 3rem;
-        button {
-            display: flex;
-            align-items: center;
+
+        &-title {
+            font-family: $font-family_acento;
         }
     }   
 
-    &___form {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 35px;
-        width: 350px;
-        textarea {
-            width: 500px;
-            height: 200px;
-        }
-    }
-    
     &__form-input {
         border-radius: 15px;
-        background-color: $background-color_5;
+        background-color: $color_neutro3;
         font-size: 14pt;
         &::placeholder {
-            color: $color_1;
+            color: $color_neutro2;
         }
         &:hover {
-            background-color: $background-color_3;
-            box-shadow: 0 0 4px #585191;
+            background-color: $color_neutro2;
+            box-shadow: 0 0 4px $color_principal;
         }
         &:focus {
-            background-color: $background-color_6;
-            box-shadow: 0 0 4px #585191;
-            color: $color_2;
+            background-color: white;
+            box-shadow: 0 0 4px $color_principal;
+            color: $color_neutro3;
         }
     }
 
     &__form-dropdown {
         select {
-            background-color: $background-color_5;
-            color: $color_1;
+            background-color: $color_neutro3;
+            color: $color_neutro2;
             &:hover {
-                background-color: $background-color_3;
-                color: $color_2;
+                background-color: $color_neutro2;
+                color: $color_neutro3;
             }
             &:focus {
-                background-color: $background-color_6;
+                background-color: white;
                 box-shadow: 0 0 4px #585191;
-                color: $color_2;
+                color: $color_neutro3;
             }
         }
         label {
@@ -76,4 +62,17 @@ form {
 	align-items: stretch;
 	gap: 20px;
 	padding: 3rem;
+    width: 200%;
+}
+
+@media (max-width: $bpSmall) {
+    form {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .contentHablamos {
+        display: flex;
+        flex-direction: column;
+        }
 }

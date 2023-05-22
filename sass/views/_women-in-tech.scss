@@ -18,10 +18,28 @@
 
         &-title {
             margin: 1rem;
+            font-family: $font-family_acento;
+            font-size: 30pt;
         }
 
         &-description {
             margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width: $bpSmall) {
+    .contentWomenTech {
+    display: flex;
+    flex-direction: column;
+
+        &__container-title {
+            font-size: 20pt;
+            margin: 10px;
+        } 
+
+        img {
+            display: none;
         }
     }
 }

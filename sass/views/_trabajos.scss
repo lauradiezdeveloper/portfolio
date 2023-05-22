@@ -1,6 +1,9 @@
 .contentTrabajos__info {
-	h1 {
+	&-title {
 		text-align: center;
+        font-family: $font-family_acento;
+        font-size: 40pt;
+        margin-bottom: 30px;
 	}
 }
 
@@ -21,7 +24,7 @@
 
         hr {
             border: none;
-            color: $color_2;
+            color: $color_neutro3;
             border-top: 2px solid #8f8f8f;
             width: 100%;
             margin: 0;
@@ -31,12 +34,24 @@
             max-width: 300px;
             margin-bottom: 20px;
         }
+    }
+}
 
-    &-work-label {
-        font-family: $font-family_2;
-        background-color: $background-color_4;
-        color: $color_4;
-        width: 200px;
-        }
+@media (max-width: $bpSmall) {
+    .contentTrabajos__info-title {
+        font-size: 30pt;
+        margin: 0px;
+    }
+
+    .contentTrabajos__container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 4rem;
+
+        &-work img{
+            max-width: 300px;
+            max-height: 200px;
+            }
     }
 }

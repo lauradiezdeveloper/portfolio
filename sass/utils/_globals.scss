@@ -3,13 +3,13 @@ html {
 }
 
 * {
-	background-color: $background-color_1;
+	background-color: $color_neutro1;
 	font-family: $font-family_1;
-	color: $color_1;
+	color: $color_neutro2;
 }
 
 body {
-	background-color: $background-color_1;
+	background-color: $color_neutro1;
 }
 
 main {
@@ -18,21 +18,21 @@ main {
 }
 
 button {
-	background-color: $background-color_2;
+	background-color: $color_acento;
 	border-radius: 20px;
 	padding: 1rem;
-	color: $color_2;
+	color: $color_neutro1;
 	cursor: pointer;
 	a {
-		background-color: $background-color_2;
-		color: $color_2;
+		background-color: $color_acento;
+		color: $color_neutro3;
 		font-weight: 900;
 	}
 }
 
 a {
 	text-decoration: none;
-	color: $color_3;
+	color: $color_neutro4;
 }
 
 ul {
@@ -56,5 +56,16 @@ p {
 }
 
 hr {
-	color: $color_1;
+	color: $color_neutro2;
+}
+
+// maquetación páginas
+@mixin templateFlex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+
+    @if ($align == true) {
+        align-items: center;
+    }
 }
